@@ -19,6 +19,7 @@
         html {
             background-color: rgb(247, 255, 247);
             background-image: linear-gradient(to left, rgb(247, 255, 247), rgb(223, 235, 223));
+            animation: opening 1s 1;
         }
 
         nav {
@@ -34,6 +35,7 @@
 
         .parah {
             font-size: 20px;
+            animation: openingtxt 1s 1;
         }
 
         a {
@@ -44,6 +46,34 @@
 
         a:hover {
             background-color: rgb(200, 215, 200);
+        }
+
+        #proglist {
+            background-color: rgb(102, 102, 184);
+            background-image: linear-gradient(to right, rgb(181, 185, 213), rgb(158, 158, 188));
+            padding-bottom: 5px;
+            color: white;
+        }
+
+        #distlist {
+            background-color: rgb(102, 102, 184);
+            background-image: linear-gradient(to right, rgb(232, 223, 215), rgb(216, 212, 195));
+            padding-bottom: 5px;
+            color: black;
+        }
+
+        h1, li {
+            animation: openingtxt 1s 1;
+        }
+
+        @keyframes opening {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+        }
+
+        @keyframes openingtxt {
+            0% {margin-right: 20px;}
+            100% {margin-right: 0;}
         }
     </style>
 </head>
@@ -60,34 +90,38 @@
     </header>
     <br>
     <br>
-    <div style="margin-right: 10px;">
+    <div style="padding-right: 10px;">
         <h1>أهلا وسهلا</h1>
         <p class="parah">هذه صفحه تجريبية لمشروع الحاسب.</p>
         <br>
-        <h1>قائمة بعض من لغات البرمجة</h1>
-        <ul lang="en" style="font-size: 20px;">
-            <li>C#</li>
-            <li>C & C++</li>
-            <li>JavaScript</li>
-            <li>R</li>
-            <li>Python</li>
-            <li lang="ar">والكثير من اللغات الأخرى.</li>
-        </ul>
+        <div id="proglist">
+            <h1 style="padding-right: 20px;">قائمة بعض من لغات البرمجة</h1>
+            <ul lang="en" style="font-size: 20px;">
+                <li>C#</li>
+                <li>C & C++</li>
+                <li>JavaScript</li>
+                <li>R</li>
+                <li>Python</li>
+                <li lang="ar">والكثير من اللغات الأخرى.</li>
+            </ul>
+        </div>
         <br>
-        <h1>قائمة بعض توزيعات لينكس</h1>
-        <ol lang="en" style="font-size: 20px;">
-            <li>Ubuntu</li>
-            <li>Fedora</li>
-            <li>Linux Mint</li>
-            <li>Arch Linux</li>
-            <li>Pop!_OS</li>
-            <li>Gentoo Linux</li>
-            <li>Debian</li>
-            <li>Zorin OS</li>
-            <li>SolusOS</li>
-            <li>OpenSUSE</li>
-            <li lang="ar">والكثير من التوزيعات الأخرى.</li>
-        </ol>
+        <div id="distlist">
+            <h1 style="padding-right: 20px;">قائمة بعض توزيعات لينكس</h1>
+            <ol lang="en" style="font-size: 20px;">
+                <li>Ubuntu</li>
+                <li>Fedora</li>
+                <li>Linux Mint</li>
+                <li>Arch Linux</li>
+                <li>Pop!_OS</li>
+                <li>Gentoo Linux</li>
+                <li>Debian</li>
+                <li>Zorin OS</li>
+                <li>SolusOS</li>
+                <li>OpenSUSE</li>
+                <li lang="ar">والكثير من التوزيعات الأخرى.</li>
+            </ol>
+        </div>
     </div>
     <br>
     <hr>
